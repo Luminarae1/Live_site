@@ -127,12 +127,6 @@ nav a:hover {
   color: var(--amber);
 }
 
-nav #active {
-  color: var(--amber);
-}
-nav #active:hover {
-  color: white;
-}
 
 /* ---------- HERO ---------- */
 .hero {
