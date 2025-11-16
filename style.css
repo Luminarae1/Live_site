@@ -958,3 +958,110 @@ button:focus {
     display: none;
   }
 }
+/* Floating WhatsApp Button (Rectangle Style) */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 18px;
+  z-index: 9999;
+
+  background: rgba(37, 211, 102, 0.9);
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 0 25px rgba(37, 211, 102, 0.45),
+    0 4px 18px rgba(0, 0, 0, 0.4);
+
+  transition: all 0.25s ease;
+}
+
+.whatsapp-btn img {
+  width: 34px;
+  height: 30px;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 35px rgba(37, 211, 102, 0.6),
+    0 6px 22px rgba(0, 0, 0, 0.5);
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+
+/* Large Tablets (max 1024px) */
+@media (max-width: 1024px) {
+  .whatsapp-btn {
+    padding: 12px 26px;
+    font-size: 18px;
+    bottom: 30px;
+    right: 20px;
+  }
+
+  .whatsapp-btn img {
+    width: 30px;
+    height: 28px;
+  }
+}
+
+/* Tablets (max 768px) */
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    padding: 9px 20px;     /* slightly bigger */
+    font-size: 15px;       /* slightly bigger */
+    bottom: 24px;
+    right: 18px;
+  }
+
+  .whatsapp-btn img {
+    width: 26px;           /* slightly bigger */
+    height: 24px;
+  }
+}
+
+/* Large Phones (max 600px) */
+@media (max-width: 600px) {
+  .whatsapp-btn {
+    padding: 7px 16px;     /* slightly bigger */
+    font-size: 13px;       /* slightly bigger */
+    bottom: 18px;
+    right: 14px;
+    gap: 7px;
+  }
+
+  .whatsapp-btn img {
+    width: 20px;           /* slightly bigger */
+    height: 20px;
+  }
+}
+
+/* Small Phones (max 480px) */
+@media (max-width: 480px) {
+  .whatsapp-btn {
+    padding: 6px 13px;     /* slightly bigger */
+    font-size: 12px;       /* slightly bigger */
+    bottom: 15px;
+    right: 12px;
+    gap: 6px;
+  }
+
+  .whatsapp-btn img {
+    width: 18px;           /* slightly bigger */
+    height: 18px;
+  }
+}
+
+
